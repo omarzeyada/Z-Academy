@@ -1,0 +1,98 @@
+body {
+    background-color: #f1f5f9!important;
+}
+.register .left,
+.register .right {
+  width: 49%;
+}
+.register .right textarea {
+  height: 157px;
+  margin-bottom: 15px;
+}
+.register form input:not([type="submit"]),
+.register form textarea,
+.register form select {
+  border: 1px solid #ccc;
+  background-color: rgba(218, 218, 218, .19);
+  color: var(--main-color);
+  outline: none;
+}
+.register form input[type="submit"] {
+  background-color: #ffc107;
+  border-color: transparent;
+}
+/* Start Team */
+.team img,
+.profile img {
+  width: 150px;
+}
+/* End Team */
+/* Start Plans */
+.plans .head {
+  border: 3px solid white;
+  outline: 3px solid transparent;
+}
+.plans .green,
+.free .join {
+  background-color: #22c55e!important;
+  outline-color: #22c55e;
+}
+.plans .blue,
+.basic .join {
+  background-color: #0075ff!important;
+  outline-color: #0075ff;
+}
+.plans .gold,
+.premium .join {
+  background-color: #ffc107!important;
+  outline-color: #ffc107;
+}
+.plans ul li svg:first-child {
+  margin-right: 5px;
+  font-size: 18px;
+}
+.plans ul li .yes {
+  color: #22c55e;
+}
+.plans ul li .no {
+  color: #f44336;
+}
+/* End Plans */
+
+.profile .stars svg {
+  color: #ffc107;
+}
+.profile .level {
+  background-color: #eee;
+  height: 6px;
+  overflow: hidden;
+  width: 70%;
+}
+.profile .level span {
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: #0075ff;
+  height: 100%;
+  border-radius: 6px;
+}
+/* Info */
+.start .click, 
+.start .videos {
+  cursor: pointer;
+}
+.start .lessons {
+  display: none;
+}
+.start .videos {
+  display: block;
+}
+.start .down {
+  display: none;
+}
+.start .arrow-up {
+  display: none;
+}
+.start .arrow-down {
+  display: block;
+}

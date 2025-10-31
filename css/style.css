@@ -1,0 +1,363 @@
+:root {
+  --dark-color: #212121;
+  --section-color: #ffc107;
+  --white-color: #f5f7fa;
+  --red-color: #ff3150;
+}
+body {
+  font-family: "Roboto", sans-serif;
+}
+/* Start Slider */
+.settings-box {
+  position: fixed;
+  left: -200px;
+  top: 0;
+  width: 200px;
+  min-height: 100vh;
+  z-index: 1021;
+  transition: .3s;
+  box-shadow: 0px 0px 3px 0.5px black;
+}
+.settings-box.open {
+  left: 0;
+}
+.settings-box h2 {
+  color: var(--section-color);
+}
+.settings-box .toggle-settings {
+  position: absolute;
+  top: 100px;
+  right: -30px;
+  background-color: #fff;
+  text-align: center;
+  cursor: pointer;
+  font-size: 20px;
+}
+.settings-box .toggle-settings svg {
+  width: 30px;
+  display: inherit;
+}
+.option-box {
+  cursor: pointer;
+  transition: .3s;
+}
+.option-box.active,
+.option-box:hover {
+  background-color: #f6f6f6;
+}
+/* End Slider */
+/* Start Navbar */
+.navbar {
+  background-color: #161616;
+}
+.navbar h1 {
+  color: var(--section-color);
+}
+.navbar .navbar-nav .nav-link {
+  color: var(--white-color);
+}
+.navbar .navbar-nav .nav-link.active, 
+.navbar .navbar-nav .nav-link:focus,
+.navbar .navbar-nav .nav-link:hover {
+  color: var(--section-color);
+}
+.navbar .search {
+  border-left: 1px solid var(--section-color);
+}
+.navbar .search svg {
+  color: var(--section-color);
+}
+.search input[type="text"] {
+  border: none;
+  border-bottom: 1px solid var(--white-color);
+  width: 0;
+  opacity: 0;
+  transition:
+  width .3s ease-in-out,
+  opacity .3s ease-in-out;
+}
+.search input.active {
+  width: 183px;
+  opacity: 1;
+}
+.search input[type="text"]:focus {
+  outline: none;
+}
+.search ::placeholder {
+  color: var(--white-color);
+}
+.navbar .navbar-toggler {
+  color: var(--white-color);
+  font-size: 25px;
+  border-color: var(--white-color);
+}
+.navbar .navbar-toggler:focus {
+  box-shadow: none;
+}
+.navbar .navbar-toggler[aria-expanded='true'] {
+  border-color: var(--section-color);
+}
+.main-btn {
+  color: var(--section-color)!important;
+  background-color: var(--red-color)!important;
+  padding: .5rem 1rem !important;
+}
+.main-btn:hover {
+  color: var(--section-color);
+  background-color: var(--red-color);
+}
+/* End Navbar */
+/* Start Landing */
+.landing {
+  background-color: var(--dark-color);
+  min-height: calc(100vh - 72px);
+}
+.landing h1 span {
+  color: var(--section-color);
+}
+.main-title::after {
+  content: '';
+  position: absolute;
+  width: 150px;
+  height: 2px;
+  background-color: var(--green-color);
+  bottom: -20px;
+  right: 50%;
+  transform: translateX(50%);
+}
+.landing .login {
+  background-color: var(--white-color);
+  right: 50%;
+  top: 50%;
+  transform: translate(50%, -50%);
+  box-shadow: 0 3px 20px 5px var(--red-color);
+  height: 59%;
+  display: none;
+}
+.login .close::before {
+  content: "\f00d";
+  font-family: "Font Awesome 5 Free";
+  font-weight: bold;
+  font-size: 28px;
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background-color: var(--red-color);
+  border-radius: 50%;
+  text-align: center;
+  right: -13px;
+  top: -11px;
+  cursor: pointer;
+}
+.landing .login form {
+  box-shadow: inset 0px 5px 20px 5px var(--section-color);
+}
+.login .check {
+  right: 50%;
+  bottom: 50%;
+  transform: translate(50%, 50%);
+  font-size: 200px;
+  color: var(--section-color);
+  display: none;
+}
+.login form .error-msg {
+  color: var(--red-color);
+  display: none;
+}
+@media (max-width: 767px) {
+  .login .help p {
+    font-size: 9px;
+  }
+}
+/* End Landing */
+/* Start About */
+.about {
+  background-color: whitesmoke;
+}
+.about .description {
+  max-width: 500px;
+}
+/* End About */
+/* Start Courses */
+.courses .person {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  top: 20px;
+  left: 20px;
+  border: 2px solid white;
+}
+.courses .pre {
+  position: absolute;
+  right: 20px;
+  top: 23px;
+  font-size: 27px;
+  border-radius: 50%;
+  color: var(--section-color);
+  background-color: rgb(255 255 255 / 50%);
+  padding: 10px;
+}
+.courses h2 {
+  background-color: var(--dark-color);
+  color: var(--section-color);
+}
+.courses .box {
+  box-shadow: 0 2px 15px rgb(0 0 0 / 10%);
+}
+.courses .icons {
+  border-top: 1px solid #eee;
+  padding-top: 15px;
+}
+.courses .icons .more {
+  position: absolute;
+  right: 50%;
+  top: -10px;
+  transform: translateX(50%);
+  background-color: var(--section-color);
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-size: 13px;
+  padding: 4px 10px;
+  cursor: pointer;
+}
+.courses .icons svg,
+.courses .teacher svg,
+.testimonials .goat .filled  {
+  color: var(--section-color);
+}
+/* End Courses */
+/* Start Testimonials */
+.testimonials {
+  background-color: whitesmoke;
+}
+.testimonials .person {
+  width: 100px;
+  top: -45px;
+  right: -10px;
+  border: 8px solid #eee;
+  border-radius: 50%;
+}
+.testimonials .max-box {
+  box-shadow: 0 2px 4px rgb(0 0 0 / 10%);
+}
+.testimonials .read,
+.testimonials .read a {
+  color: var(--red-color);
+  cursor: pointer;
+  width: fit-content;
+}
+/* End Testimonials */
+/* Start Features */
+.features h2 {
+  color: var(--section-color);
+}
+.features .max-box {
+  box-shadow: 0 2px 6px rgb(0 0 0 / 50%);
+}
+.features .max-box svg {
+  font-size: 50px;
+}
+.features .max-box .tv {
+  color: var(--section-color);
+}
+.features .max-box .check-square {
+  color: #61c390;
+}
+.features .max-box .line {
+  color: #3f9ad6;
+}
+.features .max-box .headset {
+  color: #6570d1;
+}
+.features .max-box .sync {
+  color: #f9a463;
+}
+.features .max-box .mobile {
+  color: #4bbcc0;
+}
+.features .max-box h3 {
+  color: var(--section-color);
+}
+/* End Features */
+/* Start Contact */
+.contact {
+  width: calc(100% - 12px);
+}
+.discount .card-discount {
+  background-image: url('../imgs/discount-background1.jpg');
+  background-size: cover;
+  color: white;
+  z-index: 1;
+}
+.discount .card-discount::before {
+  content: "";
+  position: absolute;
+  background-color: rgb(255 193 7 / 97%);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+.discount .card-discount h2 {
+  letter-spacing: -2px;
+  font-size: 40px;
+}
+.discount .card-discount p {
+  max-width: 500px;
+  line-height: 1.6;
+  font-size: 18px;
+}
+.discount .card-discount img {
+  width: 300px;
+  max-width: 100%;
+}
+.discount .request .input {
+  background-color: #f9f9f9;
+  margin-bottom: 25px;
+  padding: 15px;
+  border-style: none;
+  border-bottom: 1px solid #ccc;
+  caret-color: var(--section-color);
+}
+.discount .request input:last-child {
+  background-color: var(--section-color);
+  color: white;
+  padding: 15px;
+  font-size: 20px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+}
+.discount .request {
+  background-color: whitesmoke;
+}
+/* End Contact */
+/* Start Footer */
+.footer {
+  background-color: var(--dark-color);
+}
+.footer .copyright > span {
+  color: var(--red-color);
+}
+.footer .copyright div span {
+  color: var(--section-color);
+}
+.footer .contact ul svg {
+  width: 20px;
+  height: 20px;
+}
+.footer .facebook {
+  background-color: #1877f2;
+}
+.footer .twitter {
+  background-color: #1da1f2;
+}
+.footer .linkedin {
+  background-color: #0077b5;
+}
+.footer .youtube {
+  background-color: #ff0000;
+}
+/* End Footer */

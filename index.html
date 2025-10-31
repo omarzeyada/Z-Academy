@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Z Academy</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css.map">
+  </head>
+  <body>
+    <!-- Start Slider -->
+    <div class="settings-box bg-white text-center">
+      <div class="toggle-settings">
+        <i class="fa fa-gear icon pt-2 pb-2"></i>
+      </div>
+      <h2 class="mt-3">Z Academy</h2>
+      <div class="settings-container">
+        <div class="option-box active home p-2 m-3 mb-2 d-flex align-items-center justify-content-start rounded">
+          <i class="fa-solid fa-house me-3"></i>
+          <h4 class="fs-6 m-0">Home</h4>
+        </div>
+        <div class="option-box profile p-2 m-3 mb-2 mt-2 d-flex align-items-center justify-content-start rounded">
+          <i class="fa-solid fa-user me-3"></i>
+          <h4 class="fs-6 m-0">Profile</h4>
+        </div>
+        <div class="option-box courses-page p-2 m-3 mb-2 mt-2 d-flex align-items-center justify-content-start rounded">
+          <i class="fa-solid fa-graduation-cap fa-fw me-3"></i>
+          <h4 class="fs-6 m-0">Courses</h4>
+        </div>
+        <div class="option-box stuff p-2 m-3 mb-2 mt-2 d-flex align-items-center justify-content-start rounded">
+          <i class="fa-solid fa-users-line me-3"></i>
+          <h4 class="fs-6 m-0">Team</h4>
+        </div>
+        <div class="option-box plans p-2 m-3 mt-2 d-flex align-items-center justify-content-start rounded">
+          <i class="fa-regular fa-credit-card fa-fw me-3"></i>
+          <h4 class="fs-6 m-0">Plans</h4>
+        </div>
+      </div>
+    </div>
+    <!-- End Slider -->
+    <!-- Start Navbar -->
+    <nav class="navbar navbar-expand-lg sticky-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <h1>Z Academy</h1>
+        </a>
+        <button 
+        class="navbar-toggler"
+        type="button" 
+        data-bs-toggle="collapse" 
+        data-bs-target="#main"
+        aria-controls="main" 
+        aria-expanded="false" 
+        aria-label="Toggle navigation">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="main">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link p-2 p-lg-3 active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link p-2 p-lg-3" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link p-2 p-lg-3" href="#courses">Courses</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link p-2 p-lg-3" href="#testimonials">Testimonials</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link p-2 p-lg-3" href="#features">Features</a>
+            </li>
+          </ul>
+          <div class="search ps-2 pe-3 d-none d-lg-block">
+            <input class="text-light bg-transparent position-relative search-input" type="text" placeholder="Search">
+              <span class="toggle"><i role="button" class="fa-solid fa-magnifying-glass"></i></span>
+          </div>
+          <a class="btn rounded-pill main-btn login-button" href="#">Login</a>
+        </div>
+      </div>
+    </nav>
+    <!-- End Navbar -->
+    <!-- Start Landing -->
+    <div class="landing position-relative d-flex justify-content-center align-items-center">
+      <div class="text-center text-light">
+        <h1>Welcome To <span>Z Academy</span></h1>
+        <p class="fs-6 text-white-50 mb-5">We make awesome graphic and web design</p>
+        <a class="btn rounded-pill main-btn" href="#">Get Started</a>
+      </div>
+      <div class="login w-50 z-index-100 position-absolute form-control p-0 border-0">
+        <span class="close"></span>
+        <div class="form h-100">
+          <form action="" class="d-grid pt-5 pb-5 ps-3 pe-3 form-control border-0 h-100">
+            <input class="mb-5 p-2 email" type="email" placeholder="Your Email">
+            <input class="mb-4 p-2 password" required type="password" placeholder="Your Password">
+            <p class="error-msg fs-6">Please enter text in the field</p>
+            <input type="submit" class="btn rounded-pill main-btn check-button" placeholder="Login">
+            <div class="help d-flex pt-2 justify-content-center text-black-50">
+              <p role="button">Forgot your password?</p>
+              <p role="button">Create a new account</p>
+            </div>
+          </form>
+        </div>
+        <div class="check position-absolute">
+          <i class="fa-solid fa-check"></i>
+        </div>
+      </div>
+    </div>
+    <!-- End Landing -->
+    <!-- Start About -->
+    <div class="about pt-5 text-center" id="about">
+      <div class="container">
+          <h1 class="pb-5">Some Stuff About Us</h1>
+        <p class="description text-center mb-5 text-black-50 m-auto">
+          Donec rutrum congue leo eget malesuada. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.
+          Pellentesque in ipsum id orci porta dapibus. Proin eget tortor risus. Donec sollicitudin molestie malesuada.
+        </p>
+        <div class="row align-items-center">
+          <div class="col-lg-4 mb-4 text-center text-md-start">
+            <div class="text">
+              <h4>Retina Design</h4>
+              <p class="text-black-50 fs-6">
+                Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Mauris blandit aliquet elit, eget
+                tincidunt nibh pulvinar a.
+              </p>
+              <p class="text-black-50 fs-6">
+                Donec rutrum congue leo eget malesuada. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.
+                Pellentesque in ipsum id orci porta dapibus. Proin eget tortor risus. Donec sollicitudin molestie
+                malesuada.
+              </p>
+              <a class="btn rounded-pill main-btn text-uppercase" href="#">Order Me One</a>
+            </div>
+          </div>
+          <div class="col-lg-8">
+            <div class="image">
+              <img class="img-fluid" src="imgs/laptop.jpeg" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End About -->
+    <!-- Start Courses -->
+    <div class="courses text-center pb-5 pt-5" id="courses">
+      <div class="container">
+        <h1 class="pb-5">Courses</h1>
+        <div class="row">
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="bg-white box">
+              <div class="position-relative">
+                <img class="img-fluid" src="imgs/Programming.jpg" alt="">
+                <img class="img-fluid position-absolute person" src="imgs/team-03.png" alt="">
+                <i class="fa-solid fa-crown pre"></i>
+              </div>
+              <div>
+                <h2 class="pt-3 pb-3">Programming</h2>
+                <p class="text-black-50 fs-6 text-start p-3 mt-2 mb-0 lh-lg">Master the craft of programming:
+                  Learn programming, design algorithms...</p>
+              </div>
+              <div class="p-3">
+                <div class="teacher d-flex mb-4 align-items-center justify-content-between">
+                  <div>
+                  <i class="fas fa-chalkboard-teacher"></i>
+                  <span class="fw-bold">Omar Zeyada</span>
+                  </div>
+                  <div class="text-black-50">70<span>$</span></div>
+                </div>
+                <div class="icons d-flex align-items-center justify-content-between position-relative">
+                  <a class="more" href="">Course Info</a>
+                  <div>
+                    <i class="fa-regular fa-user"></i>
+                    <span class="text-black-50">4.7K</span>
+                  </div>
+                  <div>
+                    <span class="text-black-50">4.5</span>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="bg-white box">
+              <div class="position-relative">
+                <img class="img-fluid" src="imgs/Graphic.jpg" alt="">
+                <img class="img-fluid position-absolute person" src="imgs/team-05.png" alt="">
+                <i class="fa-solid fa-crown pre"></i>
+              </div>
+              <div>
+                <h2 class="pt-3 pb-3">Graphic design</h2>
+                <p class="text-black-50 fs-6 text-start p-3 mt-2 mb-0 lh-lg">Master the art of graphic design: Learn design principles,
+                  typography...</p>
+              </div>
+              <div class="p-3">
+                <div class="teacher d-flex mb-4 align-items-center justify-content-between">
+                  <div>
+                  <i class="fas fa-chalkboard-teacher"></i>
+                  <span class="fw-bold">Reham Zeyada</span>
+                  </div>
+                  <div class="text-black-50">90<span>$</span></div>
+                </div>
+                <div class="icons d-flex align-items-center justify-content-between position-relative">
+                  <a class="more" href="">Course Info</a>
+                  <div>
+                    <i class="fa-regular fa-user"></i>
+                    <span class="text-black-50">5K</span>
+                  </div>
+                  <div>
+                    <span class="text-black-50">4.6</span>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="bg-white box">
+              <div class="position-relative">
+                <img class="img-fluid" src="imgs/Languages.jpg" alt="">
+                <img class="img-fluid position-absolute person" src="imgs/team-04.png" alt="">
+                <i class="fa-solid fa-crown pre"></i>
+              </div>
+              <div>
+                <h2 class="pt-3 pb-3">Languages</h2>
+                <p class="text-black-50 fs-6 text-start p-3 mt-2 mb-0 lh-lg">Master The Art Of Language Learning:
+                Study Grammar, Vocabulary...</p>
+              </div>
+              <div class="p-3">
+                <div class="teacher d-flex mb-4 align-items-center justify-content-between">
+                  <div>
+                  <i class="fas fa-chalkboard-teacher"></i>
+                  <span class="fw-bold">Rehab Rabie</span>
+                  </div>
+                  <div class="text-black-50">50<span>$</span></div>
+                </div>
+                <div class="icons d-flex align-items-center justify-content-between position-relative">
+                  <a class="more" href="#">Course Info</a>
+                  <div>
+                    <i class="fa-regular fa-user"></i>
+                    <span class="text-black-50">3.5K</span>
+                  </div>
+                  <div>
+                    <span class="text-black-50">4.7</span>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a class="more-courses btn rounded-pill main-btn" href="">More Courses</a>
+      </div>
+    </div>
+    <!-- End Courses -->
+    <!-- Start Techs -->
+    <div class="techs pt-5 pb-5 text-center bg-black">
+      <div class="container align-items-center">
+        <div class="row">
+          <div class="col-sm-6 col-md-4 col-lg-2 mt-3 mb-3">
+            <img class="img-fluid" src="imgs/tech-1.png" alt="">
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-2 mt-3 mb-3">
+            <img class="img-fluid" src="imgs/tech-2.png" alt="">
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-2 mt-3 mb-3">
+            <img class="img-fluid" src="imgs/tech-3.png" alt="">
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-2 mt-3 mb-3">
+            <img class="img-fluid" src="imgs/tech-4.png" alt="">
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-2 mt-3 mb-3">
+            <img class="img-fluid" src="imgs/tech-1.png" alt="">
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-2 mt-3 mb-3">
+            <img class="img-fluid" src="imgs/tech-2.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Techs -->
+    <!-- Start Testimonials -->
+    <div class="testimonials text-center pb-5 pt-5" id="testimonials">
+      <div class="container">
+        <h1 class="pb-5">Testimonials</h1>
+         <div class="row">
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="bg-white max-box position-relative text-start ps-3 pe-3">
+              <img class="position-absolute person" src="imgs/avatar-01.png" alt="">
+              <h3 class="pt-3">Mohamed Farag</h3>
+              <span>Full Stack Developer</span>
+              <div class="goat">
+                <i class="filled fa-solid fa-star"></i>
+                <i class="filled fa-solid fa-star"></i>
+                <i class="filled fa-solid fa-star"></i>
+                <i class="filled fa-solid fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+              <p class="text-black-50 lh-md mt-3 pb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Maiores et reiciendis voluptatum,amet est natus quaerat ducimus
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="bg-white max-box position-relative text-start ps-3 pe-3">
+              <img class="position-absolute person" src="imgs/avatar-02.png" alt="">
+              <h3 class="pt-3">Mohamed Ibrahim</h3>
+              <span>Front-End Developer</span>
+              <div class="goat">
+                <i class="filled fa-solid fa-star"></i>
+                <i class="filled fa-solid fa-star"></i>
+                <i class="filled fa-solid fa-star"></i>
+                <i class="filled fa-solid fa-star"></i>
+                <i class="filled fa-solid fa-star"></i>
+              </div>
+              <p class="text-black-50 lh-md mt-3 pb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Maiores et reiciendis voluptatum,amet est natus quaerat ducimus
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="bg-white max-box position-relative text-start ps-3 pe-3">
+              <img class="position-absolute person" src="imgs/avatar-03.png" alt="">
+              <h3 class="pt-3">Shady Nabil</h3>
+              <span>Graphic design</span>
+              <div class="goat">
+                <i class="filled fa-solid fa-star"></i>
+                <i class="filled fa-solid fa-star"></i>
+                <i class="filled fa-solid fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+              <p class="text-black-50 lh-md mt-3 pb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Maiores et reiciendis voluptatum,amet est natus quaerat ducimus
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="bg-white max-box position-relative text-start ps-3 pe-3">
+              <img class="position-absolute person" src="imgs/avatar-04.png" alt="">
+              <h3 class="pt-3">Amr Hendawy</h3>
+              <span>Graphic design</span>
+              <div class="goat">
+                <i class="filled fa-solid fa-star"></i>
+                <i class="filled fa-solid fa-star"></i>
+                <i class="filled fa-solid fa-star"></i>
+                <i class="filled fa-solid fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+              <p class="text-black-50 lh-md mt-3 pb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Maiores et reiciendis voluptatum,amet est natus quaerat ducimus
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="bg-white max-box position-relative text-start ps-3 pe-3">
+              <img class="position-absolute person" src="imgs/avatar-05.png" alt="">
+              <h3 class="pt-3">Shreief Ashraf</h3>
+              <span>English Language</span>
+              <div class="goat">
+                <i class="filled fa-solid fa-star"></i>
+                <i class="filled fa-solid fa-star"></i>
+                <i class="filled fa-solid fa-star"></i>
+                <i class="filled fa-solid fa-star"></i>
+                <i class="filled fa-solid fa-star"></i>
+              </div>
+              <p class="text-black-50 lh-md mt-3 pb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Maiores et reiciendis voluptatum,amet est natus quaerat ducimus
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="bg-white max-box position-relative text-start ps-3 pe-3">
+              <img class="position-absolute person" src="imgs/avatar-06.png" alt="">
+              <h3 class="pt-3">Osama Mohamed</h3>
+              <span>Mobile Application Developer</span>
+              <div class="goat">
+                <i class="filled fa-solid fa-star"></i>
+                <i class="filled fa-solid fa-star"></i>
+                <i class="filled fa-solid fa-star"></i>
+                <i class="filled fa-solid fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+              <p class="text-black-50 lh-md mt-3 pb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Maiores et reiciendis voluptatum,amet est natus quaerat ducimus
+              </p>
+            </div>
+          </div>
+        </div>
+          <a class="btn read rounded-pill main-btn" href="">Read More<i class="fa-solid fa-arrow-right ms-2"></i></a>
+      </div>
+    </div>
+    <!-- End Testimonials -->
+    <!-- Start Features -->
+    <div class="features text-center pb-5 pt-5" id="features">
+      <div class="container">
+        <h1 class="pb-5">Features</h1>
+        <h2 class="mb-3">Why choose our educational platform ?</h2>
+         <div class="row">
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="bg-white max-box position-relative text-center mt-5 ps-2 pe-2 rounded">
+              <i class="fas fa-tv tv pt-3"></i>
+              <h3 class="pt-3">Interactive lessons</h3>
+              <p class="text-black-50 lh-md mt-3 pb-3">
+                Fun, easy-to-understand content with activities to reinforce information.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="bg-white max-box position-relative text-center mt-5 ps-2 pe-2 rounded">
+              <i class="fas fa-check-square check-square pt-3"></i>
+              <h3 class="pt-3">Instant tests</h3>
+              <p class="text-black-50 lh-md mt-3 pb-3">
+                Test your knowledge immediately and know your level accurately
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="bg-white max-box position-relative text-center mt-5 ps-2 pe-2 rounded">
+              <i class="fas fa-chart-line line pt-3"></i>
+              <h3 class="pt-3">Track your progress</h3>
+              <p class="text-black-50 lh-md mt-3 pb-3">
+                We ensure your step-by-step progress to access education easily.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="bg-white max-box position-relative text-center mt-5 ps-2 pe-2 rounded">
+              <i class="fas fa-headset headset pt-3"></i>
+              <h3 class="pt-3">Ongoing support</h3>
+              <p class="text-black-50 lh-md mt-3 pb-3">
+                The support team is available for any questions or assistance while learning.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="bg-white max-box position-relative text-center mt-5 ps-2 pe-2 rounded">
+              <i class="fas fa-sync-alt sync pt-3"></i>
+              <h3 class="pt-3">Fresh content</h3>
+              <p class="text-black-50 lh-md mt-3 pb-3">
+                Regular course updates to always develop your skills.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="bg-white max-box position-relative text-center mt-5 ps-2 pe-2 rounded">
+              <i class="fa-solid fa-microchip mobile pt-3"></i>
+              <h3 class="pt-3">Compatible with devices</h3>
+              <p class="text-black-50 lh-md mt-3 pb-3">
+                Learn from anywhere, whether mobile, tablet, or computer
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Features -->
+    <!-- Start Contact -->
+    <div class="contact">
+      <div class="discount row" id="discount">
+        <div class="card-discount col-lg-6 col-md-12 text-center position-relative d-flex align-items-center justify-content-center">
+          <div class="mini-box">
+            <h2 class="mt-5 mb-4">We Have A Discount</h2>
+            <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi asperiores consectetur, recusandae ratione
+              provident necessitatibus, cumque delectus commodi
+              fuga praesentium beatae. Totam vel similique laborum dicta aperiam odit doloribus corporis.</p>
+            <img src="imgs/discount.png" alt="">
+          </div>
+        </div>
+        <div class="request col-lg-6 col-md-12 pb-5 text-center position-relative d-flex align-items-center justify-content-center">
+          <div class="mini-box ">
+            <h2 class="mt-5 mb-5">Request A Discount</h2>
+            <from action="">
+            <input class="input d-block w-100" type="text" name="name" placeholder="Your Name">
+            <input class="input d-block w-100" type="email" name="email" placeholder="Your Email">
+            <input class="input d-block w-100" type="text" name="mobile" placeholder="Your Phone">
+            <textarea class="input d-block w-100" placeholder="Tell Us About Your Needs" name="massage"></textarea>
+            <input class="d-block w-100" type="submit" value="Sand">
+            </from>
+          </div>
+        </div>
+      </div>
+    </div>
+      <!-- End Contact -->
+       <!-- Start Footer -->
+     <div class="footer pt-5 pb-5 text-white-50 text-center text-md-start">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-lg-4">
+            <div class="info mb-5">
+              <p class="mb-5">
+                Pellentesque in ipsum id orci porta dapibus. Vivamus magna justo, lacinia eget consectetur sed,
+                convallis at tellus.
+              </p>
+              <div class="copyright">
+                Created By <span>Omar</span>
+                <div>&copy; 2025 - <span>Z Academy</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-2">
+            <div class="links-box">
+              <h5 class="text-light">Links</h5>
+              <ul class="list-unstyled lh-lg">
+                <li>Home</li>
+                <li>About</li>
+                <li>Courses</li>
+                <li>Testimonials</li>
+                <li>Support</li>
+                <li>Terms and Condition</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-2">
+            <div class="links-box">
+              <h5 class="text-light">About Us</h5>
+              <ul class="list-unstyled lh-lg">
+                <li>Sign In</li>
+                <li>Register</li>
+                <li>About Us</li>
+                <li>Blog</li>
+                <li>Contact Us</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="contact">
+              <h5 class="text-light">Contact Us</h5>
+              <p class="lh-lg mt-3 mb-5">Get in touch with us via mail phone.We are waiting for your call or message</p>
+              <a class="btn rounded-pill main-btn w-100" href="#">OR@gmail.com</a>
+              <ul class="d-flex justify-content-center mt-5 list-unstyled gap-4">
+                <li>
+                  <a class="d-block text-light" href="#"
+                    ><i class="fa-brands fa-facebook fa-lg facebook rounded-circle p-2"></i
+                  ></a>
+                </li>
+                <li>
+                  <a class="d-block text-light" href="#"
+                    ><i class="fa-brands fa-twitter fa-lg twitter rounded-circle p-2"></i
+                  ></a>
+                </li>
+                <li>
+                  <a class="d-block text-light" href="#"
+                    ><i class="fa-brands fa-linkedin fa-lg linkedin rounded-circle p-2"></i
+                  ></a>
+                </li>
+                <li>
+                  <a class="d-block text-light" href="#">
+                    <i class="fa-brands fa-youtube fa-lg youtube rounded-circle p-2"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+     </div>
+    <!-- End Footer -->
+    <script src="js/main.js"></script>
+    <script src="js/all.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
